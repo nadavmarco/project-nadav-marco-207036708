@@ -6,4 +6,226 @@ body {
     padding: 20px;
     direction: rtl;
     color: #333;
+  }form *, .filters * {
+    box-sizing: border-box;
+  }
+  
+  form input,
+  form select,
+  form button {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #004d40;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: #26a69a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(38, 166, 154, 0.5);
+  }
+  
+  form button {
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #004d40;
+  }
+  
+  /* תיבת הסבר מתחת לטופס */
+  .note {
+    max-width: 600px;
+    margin: -20px auto 30px;
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  /* בלוק סינון */
+  .filters {
+    background-color: #e0f2f1;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 500px; /* הוקטן מ־600 */
+    margin: 0 auto 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    overflow: hidden; /* מונע בריחה של שדות */
+  }
+  
+  .filters label {
+    font-weight: bold;
+    display: block;
+    margin-top: 16px;
+  }
+  
+  .filters input,
+  .filters select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+  }
+  
+  /* סטטיסטיקה */
+  #stats {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #00695c;
+    margin-bottom: 20px;
+  }
+  
+  #candidates {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border: 2px dashed #b2dfdb;
+  }
+  
+  .candidate {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  
+  .candidate:last-child {
+    border-bottom: none;
+  }
+  
+  /* הודעת הצלחה */
+  .success-message {
+    background-color: #d0f0c0;
+    color: #2e7d32;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* כפתורי פעולה */
+  .action-buttons {
+    margin-top: 10px;
+  }
+  
+  .action-buttons button {
+    padding: 6px 12px;
+    margin-left: 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .delete-btn {
+    background-color: #ff5252;
+    color: white;
+  }
+  
+  .toggle-btn {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  /* עיצוב סטטוס אודישן */
+  .passed {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .not-passed {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* רספונסיביות */
+  @media (max-width: 600px) {
+    form,
+    .filters,
+    #candidates {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    form input,
+    form select,
+    form button {
+      font-size: 15px;
+    }
+  
+    h1,
+    h2 {
+      font-size: 22px;
+    }
+  }
+  .centered-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .link-button {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link-button:hover {
+    background-color: #004d40;
   }
