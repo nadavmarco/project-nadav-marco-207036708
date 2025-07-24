@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>טופס הרשמה לפסטיבל</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>טופס הרשמה - חזון שירים לבעלי כנפיים</h1>
+
+  <form id="registerForm">
+    <label for="name">שם פרטי ומשפחה:</label>
+    <input type="text" id="name" required />
+
+    <label for="email">כתובת אימייל:</label>
+    <input type="email" id="email" required />
+
+    <label for="type">סוג כנפיים:</label>
+    <select id="type" required>
+      <option value="נוצה">נוצה</option>
+      <option value="עור">עור</option>
+      <option value="אחר">אחר</option>
+    </select>
+
+    <label for="style">סגנון מוזיקלי:</label>
+    <input type="text" id="style" required />
+
+    <label for="song">שם השיר:</label>
+    <input type="text" id="song" required />
+
+    <label for="checked">האם הקול נבדק על ידי נשר מוסמך:</label>
+    <select id="checked" required>
+      <option value="כן">כן</option>
+      <option value="לא">לא</option>
+    </select>
+
+    <button type="submit">הגש מועמדות</button>
+  </form>
+
+  <p class="note">שדה "האם הקול נבדק על ידי נשר מוסמך" מייצג האם המועמד עבר אודישן.</p>
+
+  <div class="centered-link">
+    <a href="views.html" class="link-button">מעבר לרשימת המועמדים</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

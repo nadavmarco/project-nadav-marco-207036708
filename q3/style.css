@@ -1,0 +1,9 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f2f2f2, #e0f7fa);
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+    color: #333;
+  }

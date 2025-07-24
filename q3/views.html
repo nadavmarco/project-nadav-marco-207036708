@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>רשימת מועמדים</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>רשימת מועמדים</h1>
+
+  <div class="filters">
+    <label>סינון לפי סגנון שירה:</label>
+    <input type="text" id="filterStyle" placeholder="סגנון מוזיקלי" />
+
+    <label>סינון לפי סוג כנף:</label>
+    <select id="filterWing">
+      <option value="">הכל</option>
+      <option value="נוצה">נוצה</option>
+      <option value="עור">עור</option>
+      <option value="אחר">אחר</option>
+    </select>
+
+    <label>סטטיסטיקה:</label>
+    <p id="stats"></p>
+  </div>
+
+  <div id="candidates"></div>
+
+  <div class="centered-link">
+    <a href="index.html" class="link-button">חזרה לטופס</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
