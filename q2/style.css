@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Alef', sans-serif;
+    background-color: #a83220; 
+    direction: rtl;
+    padding-top: 80px;
+    color: #2b2b2b;
+  }
+  
