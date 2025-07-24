@@ -6,5 +6,77 @@ body {
     padding: 0;
     direction: rtl;
   }
-  
-  
+
+.header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+.day-title {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-subtitle {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.class-time {
+  color: #6a0dad;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+@media (max-width: 575px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .card-img-top {
+    height: 120px;
+  }
+}
